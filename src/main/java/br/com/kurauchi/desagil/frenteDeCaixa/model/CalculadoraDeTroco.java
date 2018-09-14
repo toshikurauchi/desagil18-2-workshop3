@@ -8,6 +8,7 @@ public class CalculadoraDeTroco {
 	private List<Integer> valores;
 
 	public CalculadoraDeTroco(List<Integer> valores) {
+		// Valores em CENTAVOS
 		this.valores = valores;
 		Collections.sort(this.valores, Collections.reverseOrder());
 	}
