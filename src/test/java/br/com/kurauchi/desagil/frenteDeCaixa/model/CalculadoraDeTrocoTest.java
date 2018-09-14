@@ -34,26 +34,7 @@ class CalculadoraDeTrocoTest {
 		Troco troco = calculadora.calculaTroco(10000, 10000);
 		assertEquals(0, troco.getTotal());
 	}
-	
-	@Test
-	void devolveTrocoDeUmCentavo() {
-		List<Integer> valores = criaValores();
-		CalculadoraDeTroco calculadora = new CalculadoraDeTroco(valores);
-		Troco troco = calculadora.calculaTroco(99, 100);
-		assertEquals(1, troco.getTotal());
-		assertEquals(1, troco.getQuantidade(1));
-	}
-	
-	@Test
-	void devolveTrocoCorreto() {
-		CalculadoraDeTroco calculadora = new CalculadoraDeTroco(criaValores());
-		Troco troco = calculadora.calculaTroco(7543, 10000);
-		assertEquals(2457, troco.getTotal());
-		assertEquals(2, troco.getQuantidade(1));
-		assertEquals(1, troco.getQuantidade(5));
-		assertEquals(1, troco.getQuantidade(50));
-		assertEquals(2, troco.getQuantidade(200));
-		assertEquals(1, troco.getQuantidade(2000));
-	}
 
+	// USE TEST-DRIVEN DEVELOPMENT (TDD), OU SEJA, IMPLEMENTE PRIMEIRO SEUS TESTES
+	// E DEPOIS O CÓDIGO QUE FAZ O TESTE PASSAR
 }

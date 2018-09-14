@@ -13,15 +13,8 @@ public class CalculadoraDeTroco {
 	}
 
 	public Troco calculaTroco(int total, int recebido) {
-		int trocoTotal = recebido - total;
-		Troco troco = new Troco();
-		for (Integer valor : valores) {
-			while (valor <= trocoTotal) {
-				troco.addQuantidade(valor, 1);
-				trocoTotal -= valor;
-			}
-		}
-		return troco;
+		// PREENCHA ESSA FUNÇÃO COM O SEU CÓDIGO
+		return new Troco();
 	}
 
 }
