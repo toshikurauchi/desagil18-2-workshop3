@@ -1,4 +1,4 @@
-package br.com.kurauchi.desagil.frenteDeCaixa.view;
+package br.com.kurauchi.desagil.frenteDeCaixa;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,6 +6,7 @@ import java.util.List;
 import javax.swing.JFrame;
 
 import br.com.kurauchi.desagil.frenteDeCaixa.model.CalculadoraDeTroco;
+import br.com.kurauchi.desagil.frenteDeCaixa.view.View;
 
 public class CalcTroco {
 	public static void main(String[] args) {
